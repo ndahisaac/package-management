@@ -34,16 +34,11 @@ vim /opt/tomcat9/conf/server.xml
 vi /opt/tomcat9/webapps/manager/META-INF/context.xml
 vi /opt/tomcat9/conf/tomcat-user.xml  # to add user
 
-	<user username="landmark" password="admin" roles="manager-gui,admin-gui"/>
-	
-
 /opt/tomcat9/conf/context.xml
 
  vi /opt/tomcat9/webapps/manager/META-INF/context.xml
   
   vi /opt/tomcat9/conf/tomcat-user.xml  # to add user
   
-	
-	username YourName password=PassWord   roles=manager-gui
-	
-	
+<user username="tomcatmanager" password="password" roles="manager-gui"/>
+  <user username="deployer" password="password" roles="manager-script"/>
